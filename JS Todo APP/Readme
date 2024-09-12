@@ -1,0 +1,44 @@
+To-Do List App
+This is a simple To-Do List web application that allows users to add, complete, and delete tasks. It saves tasks in the browser's localStorage to persist them across page reloads.
+
+
+Technologies Used
+HTML5: Structure of the webpage.
+CSS3: Styling of the application.
+JavaScript: Adding functionality such as adding, completing, and deleting tasks, as well as handling data persistence using localStorage.
+Setup Instructions
+To run this project locally, follow these steps:
+
+Clone the repository:
+
+
+git clone https://github.com/yourusername/todo-app.git
+cd todo-app
+Open index.html in your browser:
+
+Simply double-click the index.html file, or right-click and open it in your preferred web browser.
+
+That's it! The app will run in your browser.
+
+Usage
+Add a task: Type a task into the input field and click the "Add Task" button.
+Complete a task: Click on any task to mark it as completed (strikethrough will appear).
+Delete a task: Click the "Delete" button next to a task to remove it from the list.
+Tasks are automatically saved to localStorage, so they will remain on the list even if you close and reopen the browser.
+File Structure
+
+├── index.html      # The main HTML file for the application
+├── styles.css      # CSS file for styling the app
+└── script.js       # JavaScript file to handle task functionality
+
+index.html
+The HTML file sets up the structure of the webpage. It includes the input field for adding tasks, a button to add tasks, and an unordered list (<ul>) for displaying tasks.
+
+styles.css
+This file provides the styling for the To-Do app. It ensures the app is centered on the screen and gives a clean, minimalistic appearance.
+
+script.js
+Contains the functionality for adding, completing, and deleting tasks. It interacts with the browser's localStorage to save tasks so that they persist across page reloads.
+
+Contributing
+Contributions are welcome! If you would like to contribute to this project, feel free to open an issue or submit a pull request.

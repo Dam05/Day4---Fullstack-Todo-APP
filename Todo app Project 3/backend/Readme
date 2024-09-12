@@ -1,0 +1,71 @@
+To-Do App
+This is a simple To-Do list application built with Flask, JavaScript, and SQLAlchemy. The app allows users to create, view, and delete tasks. The tasks are stored in a SQLite database on the backend, while the frontend is built using HTML, CSS, and JavaScript, making use of API calls to interact with the Flask backend.
+
+Features
+Add new tasks to the To-Do list.
+Mark tasks as completed by clicking on them.
+Delete tasks from the list.
+Persistent task storage using an SQLite database.
+Responsive and clean user interface.
+Prerequisites
+
+Python 3.x
+pip (Python package installer)
+Web browser (for running the frontend)
+
+Installation
+Clone the repository or download the project files:
+git clone https://github.com/
+cd flask-todo-app
+Create a virtual environment to isolate the project dependencies:
+
+
+python3 -m venv venv
+Activate the virtual environment:
+
+On macOS/Linux:
+
+source venv/bin/activate
+On Windows:
+
+venv\Scripts\activate
+Install the required Python dependencies:
+
+
+pip install Flask Flask-SQLAlchemy
+
+
+Project Structure
+
+flask_todo_app/
+│
+├── app.py                # Flask backend and API routes
+├── tasks.db              # SQLite database (created automatically)
+├── templates/
+│   └── index.html        # Main HTML file
+├── static/
+│   ├── script.js         # Frontend JavaScript
+│   └── styles.css        # Frontend CSS
+└── README.md             # This README file
+Running the Application
+Start the Flask application:
+
+
+python app.py
+Open your browser and navigate to http://127.0.0.1:5000 to view the To-Do list app.
+
+Usage
+Add a Task: Enter a task in the input field and click "Add Task". The task will be saved and displayed in the list.
+Mark a Task as Completed: Click on any task to toggle the completed state (line-through).
+Delete a Task: Click on the "Delete" button next to a task to remove it from the list and the database.
+API Endpoints
+The Flask backend provides a simple REST API for managing tasks:
+
+GET /api/tasks: Retrieve all tasks.
+POST /api/tasks: Add a new task by sending a JSON body { "task": "Task description" }.
+DELETE /api/tasks/<id>: Delete a task by its ID.
+Technologies Used
+Flask: Python web framework for the backend.
+SQLAlchemy: ORM for handling the SQLite database.
+JavaScript: For interacting with the backend via API calls.
+HTML/CSS: For the user interface.
